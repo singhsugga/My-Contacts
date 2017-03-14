@@ -1,0 +1,92 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+      <style>
+      .icon
+      {
+        height: 30px;
+        width: 30px;
+      }
+      </style>
+    </head>
+
+    <body>
+      <div class="container z-depth-3">
+       <ul class="collapsible " data-collapsible="accordion">
+         <li>
+         <div id="header" class="collapsible-header waves-effect"><i class="material-icons"><img class="icon" src="icons/ic_playlist_add_black_24dp_2x.png" /></i><b>Add Contact</b></div>
+         <div class="collapsible-body">
+              <form name="addcontact" class="col s12 ">
+              <div class="row ">
+               
+                <div class="input-field col s12">
+                 <input  id="name" type="text" class="validate">
+                <label for="first_name">Name</label>
+              </div>
+             </div>
+             
+              <div class="row">
+                <div class="input-field col s12">
+                 <input id="email" type="text" class="validate">
+                <label for="first_name">Email</label>
+              </div>
+             </div>
+
+             <div class="row">
+                <div class="input-field col s12">
+                 <input  id="phone" type="text" class="validate">
+                <label for="first_name">Phone no.</label>
+              </div>
+             </div>
+
+               <button id="savecontactbutton" class="btn waves-effect waves-light" type="submit" name="action">Submit
+                 <i class="material-icons right"><img style="height: 26px;width: 30px;" src="icons/sendw.png"/></i>
+              </button>
+
+
+
+           </div>
+         </form>
+         </li>
+       </ul>
+       </div>
+
+
+      <div class="container z-depth-3">
+      <ul class="collection with-header">
+        <li class="collection-header"><h5>Contacts</h5></li>
+        <div id="contactlist">
+        
+
+        <!--<li class="collection-item"><div>Suraj Sugga <a onClik="alert('Hello I am alert')" href="tel:[7696338489]" class="secondary-content"><i class="material-icons red-text">delete</i></a>
+
+         <a style="margin-right: 8px;" onClik="alert('Hello I am alert')" href="tel:[7696338489]" class="secondary-content"><i class="material-icons ">phone</i></a>
+
+        </div></li>-->
+
+
+
+
+        
+
+        </div>
+      </ul>
+       </div>
+
+
+<!--<a style="margin-right:10px; margin-bottom: 0px; position:absolute;" href="#header" data-click="true" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+      <!--Import jQuery before materialize.js-->
+
+      <script type="text/javascript" src="js/jquery.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/main.js"></script>
+    </body>
+  </html>
